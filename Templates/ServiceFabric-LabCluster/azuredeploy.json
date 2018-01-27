@@ -61,7 +61,14 @@
             "metadata": {
                 "description": "Public accessible application port #2."
             }
-        }
+        },
+        "SFReverseProxyPort": {
+            "type": "int",
+            "defaultValue": 19081,
+            "metadata": {
+              "description": "Endpoint for Service Fabric Reverse proxy"
+            }
+          }
     },
     "variables": {
         "quickstartRepoRoot": "https://raw.githubusercontent.com/ryankmcintyre/devtestlabs/master/",
@@ -143,6 +150,9 @@
                     },
                     "loadBalancedAppPort2": {
                         "value": "[variables('loadBalancedAppPort2')]"
+                    },
+                    "SFReverseProxyPort": {
+                        "value": "[parameters('SFReverseProxyPort')]"
                     },
                     "certificateThumbprint": {
                         "value": "[parameters('certificateThumbprint')]"
