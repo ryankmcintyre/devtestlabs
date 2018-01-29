@@ -71,7 +71,7 @@
           }
     },
     "variables": {
-        "quickstartRepoRoot": "https://raw.githubusercontent.com/ryankmcintyre/devtestlabs/master/",
+        "quickstartRepoRoot": "https://raw.githubusercontent.com/ryankmcintyre/sample-templates/master/",
         "clusterName": "[concat('sf-', toLower(uniqueString(resourceGroup().name)))]",
         "vaultName": "[concat('kv-', toLower(uniqueString(resourceGroup().name)))]",
         "vaultSecret": "ClusterCertificate",
